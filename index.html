@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydpi=device-dpi, user-scalable=no" />
+
+
+    <title>GetFitU</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="css/bootstrap-green.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+
+    *{
+      -webkit-font-smoothing:antialiased;
+  text-rendering: optimizeLegibility;
+    }
+
+    /*.navbar-brand,
+.navbar-nav li a {
+    line-height: 150px;
+    height: 150px;
+    padding-top: 0;
+}*/
+
+/** {outline:1px solid black;}*/
+
+header{
+margin-top:75px;
+
+}
+
+.navbar-right {
+  padding-right:8px;
+}
+
+.navbar-collapse { max-height: 100% !important; }
+
+.social {width:228px;}
+
+.social a {
+  text-decoration: none;
+  display:block;
+  padding:0;
+  float:left;
+  width:35px;
+  height:35px;
+  background:#2F575D;
+  font-size:1.1em;
+  text-align:center;
+  color:white;
+  line-height: 35px;
+  border-radius:100%;
+  margin-right:3px;
+  margin-top:5px;
+}
+
+/*.social #beachbody:hover {
+  background: black;
+}
+
+.social #facebook:hover {
+  background:#3b5998;
+}
+.social #pinterest:hover{
+  background:#cb2027;
+}
+.social #instagram:hover {
+  background:#125688;
+}
+.social #youtube:hover {
+  background:#bb0000;
+}
+.social #email:hover {
+  background:#4dc247;
+
+}*/
+
+.social #beachbody {
+  background: black;
+}
+
+.social #facebook {
+  background:#3b5998;
+}
+.social #pinterest{
+  background:#cb2027;
+}
+.social #instagram {
+  background:#125688;
+}
+.social #youtube {
+  background:#bb0000;
+}
+.social #email {
+  background:#4dc247;
+
+}
+
+.social-sm {display:none;}
+.social-lg {position: fixed;
+            right:0;
+            z-index:999;
+            top:50px;}
+
+  #callToAction {
+              background-color: rgb(255, 255, 47);
+              display:block;
+              color:#575757;
+              text-decoration: none;
+              padding:2px;
+              border-radius: 8px;
+              border: 2px solid #575757;
+              font-size: 23px;
+              font-weight:bold;
+            }
+
+  #banner {
+    margin-top:15px;
+    margin-bottom:15px;
+  }
+
+  #logo img {
+    width:100%;
+    height:auto;
+  }
+
+  #events-quote-section {
+    margin-top:35px;
+    margin-bottom:15px;
+  }
+
+  .feature-article {display:block;margin-top:25px;}
+
+  .feature-article .article-image {
+    margin: 0 7px 0 0;
+    width:150px;
+    height:150px;
+    background:url('http://placehold.it/150x150') no-repeat;
+    background-size: cover;
+    float:left;
+  }
+  .feature-article h3 {
+    margin-top:0;
+    padding-top:0;
+  }
+
+  .event {
+    margin-top:20px;
+  }
+
+  .event a {font-size:1.4em !important;
+            margin: 0 7px 0 0;
+            width:75px;
+            float:left;}
+
+  .event h4 {
+    margin: 0;
+    margin-bottom:5px;
+  }
+
+  .event-more {
+    float:right;
+  }
+  .event-more a {
+    width:auto;
+  }
+
+  .add-divider {border-right:1px solid #C4CDC1;}
+  .upper {text-transform: uppercase;}
+
+  blockquote {
+    font-size: 1.5em;
+    border:none;
+    padding-left: 5px;
+    margin-top:25px;
+  }
+
+  #hero {
+    background:#C4CDC1;
+  }
+
+  #footer {
+    background:#28363D;
+    margin-top:25px;
+  }
+
+  #copyright {
+    text-align:center;
+    color:white;
+  }
+
+
+
+/*Arrow fix*/
+.carousel-control .icon-prev, .carousel-control .icon-next,
+.carousel-control .fa-chevron-left, .carousel-control
+.fa-chevron-right {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+}
+
+/* Small Devices, Tablets */
+   @media only screen and (max-width : 767px) {
+      .social-sm {display: block;
+
+                  margin-left:auto;
+                  margin-right: auto;
+                width:210px;}
+      .social-lg {display:none;}
+
+      .social a {
+        margin-right:5px;
+        margin-top:8px;
+      }
+
+      #callToAction {
+        font-size:17px;
+        padding:7px;
+
+      }
+
+      .navbar-form input {
+        width:84%;
+        float:left;
+        margin-right:5px;
+      }
+
+      .social a {
+        width:30px;
+        height:30px;
+        line-height: 30px;
+        border-radius:100%;
+        margin-right:3px;
+        margin-top:10px;
+      }
+
+   }
+
+   /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+      .add-divider {border-right:none;}
+    }
+    </style>
+  </head>
+  <body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<nav class="navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+
+        <div class="navbar-header">
+
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+
+          <a class="navbar-brand" href="#">GFU</a>
+          <div class="social social-sm">
+          <a id="beachbody" href="http://www.beachbodycoach.com/Tricia4Success">BB</a>
+<a id="facebook" href="http://facebook.com/tricia4success"><i class="fa fa-facebook"></i></a>
+<a id="pinterest" href="https://www.pinterest.com/tricia4success/"><i class="fa fa-pinterest-p"></i></a>
+<a id="instagram" href="https://www.instagram.com/tricia4success/"><i class="fa fa-instagram"></i></a>
+<a id="youtube" href="https://www.youtube.com/channel/UCDhbpGpM0twf6qeVsPmhvvg"><i class="fa fa-youtube"></i></a>
+<a id="email" href="mailto:tricia4success@gmail.com"><i class="fa fa-envelope"></i></a>
+        </div>
+        </div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">Workouts</a>
+						</li>
+            <li>
+							<a href="#">Nutrition</a>
+						</li>
+            <li>
+							<a href="#">Articles</a>
+						</li>
+            <li>
+							<a href="#">Resources</a>
+						</li>
+            <li>
+							<a href="#">About</a>
+						</li>
+            <li>
+							<a href="#">Contact</a>
+						</li>
+						<!--
+            *****DROPDOWN OPTION
+            <li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Action</a>
+								</li>
+								<li>
+									<a href="#">Another action</a>
+								</li>
+								<li>
+									<a href="#">Something else here</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a href="#">Separated link</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a href="#">One more separated link</a>
+								</li>
+							</ul>
+						</li> -->
+					</ul>
+          <div class="navbar-right">
+					<form class="navbar-form" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" />
+              <button type="submit" class="btn btn-default">
+  							Go
+  						</button>
+						</div>
+
+					</form>
+				  </div>
+      </div>
+
+			</nav>
+      <div class="social social-lg">
+      <a id="beachbody" href="http://www.beachbodycoach.com/Tricia4Success">BB</a>
+      <a id="facebook" href="http://facebook.com/tricia4success"><i class="fa fa-facebook"></i></a>
+      <a id="pinterest" href="https://www.pinterest.com/tricia4success/"><i class="fa fa-pinterest-p"></i></a>
+      <a id="instagram" href="https://www.instagram.com/tricia4success/"><i class="fa fa-instagram"></i></a>
+      <a id="youtube" href="https://www.youtube.com/channel/UCDhbpGpM0twf6qeVsPmhvvg"><i class="fa fa-youtube"></i></a>
+      <a id="email" href="mailto:tricia4success@gmail.com"><i class="fa fa-envelope"></i></a>
+      </div>
+			<header class="row">
+				<div class="col-md-4">
+
+				</div>
+				<div class="col-md-4 text-center">
+          <div id="logo">
+            <img src="images/logo.png" alt="Your online fitness resource.">
+          </div>
+				</div>
+				<div class="col-md-4">
+
+				</div>
+			</header><!--header/logo-->
+			<div class="row">
+				<div class="col-md-12 text-center">
+          <a href="http://eepurl.com/bG1P4b" id="callToAction">
+            Sign Up For <span class="highlight">Free</span> To Join GetFitU Team!
+          </a>
+				</div>
+			</div>
+    </div>
+
+
+  </div>
+</div><!--container before banner-->
+
+  <div class="carousel slide" id="banner">
+    <ol class="carousel-indicators">
+      <li class="active" data-slide-to="0" data-target="#banner">
+      </li>
+      <li data-slide-to="1" data-target="#banner">
+      </li>
+      <li data-slide-to="2" data-target="#banner">
+      </li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active">
+        <a href="http://www.teambeachbody.com/checkout/-/bbcheckout/challengepack/hammer-chisel?referringRepId=530371  " target="_blank"><img src="images/hammerchiselbanner.jpg"></a>
+        <!-- <div class="carousel-caption">
+          <h4>
+            First Thumbnail label
+          </h4>
+          <p>
+            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+          </p>
+        </div> -->
+      </div>
+      <div class="item">
+        <a href="https://www.teambeachbody.com/signup/-/signup/free?referringRepId=530371" target="_blank"><img src="images/21dayfixbanner.jpg"></a>
+      </div>
+      <div class="item">
+        <a href="http://www.myshakeology.com/Tricia4Success" target="_blank"><img src="images/shakeologybanner.jpg"></a>
+      </div>
+    </div> <a class="left carousel-control" href="#banner" data-slide="prev"><i class="fa fa-chevron-left"></i></a> <a class="right carousel-control" href="#banner" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+  </div> <!--banner-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Featured Articles</h2>
+      <hr>
+    </div>
+  </div>
+	<div class="row">
+		<div class="col-md-6">
+      <div class="feature-article">
+          <div class="article-image"></div>
+
+      <h3>
+        Article #1
+      </h3>
+      <p class="lead">
+        This is an excerpt from the article. This is an excerpt from the article. This is an excerpt from the article... <a href="#">continue reading &raquo;</a>
+      </p>
+    </div><!--feature article-->
+    <div class="clearfix"></div>
+		</div>
+		<div class="col-md-6">
+      <div class="feature-article">
+          <div class="article-image"></div>
+
+      <h3>
+        Article #2
+      </h3>
+      <p class="lead">
+        This is an excerpt from the article. This is an excerpt from the article. This is an excerpt from the article... <a href="#">continue reading &raquo;</a>
+      </p>
+    </div><!--feature article-->
+		</div>
+	</div><!--featuredArticles-->
+	<div id="events-quote-section" class="row well">
+		<div class="col-md-6 add-divider">
+      <h2>Upcoming Events</h2>
+      <hr>
+      <div class="event">
+        <a href="#" class="btn btn-primary btn-large"><strong class="upper">feb</strong><br><small>14</small></a>
+        <h4>Event 1</h4>
+        <p>This is the description for the event. This is the description for the event. This is the description for the event.</p>
+      </div><!--event-->
+      <div class="event">
+        <a href="#" class="btn btn-primary btn-large"><strong class="upper">feb</strong><br><small>28</small></a>
+        <h4>Event 2</h4>
+        <p>This is the description for the event. This is the description for the event. This is the description for the event.</p>
+      </div><!--event-->
+      <div class="event">
+        <a href="#" class="btn btn-primary btn-large"><strong class="upper">mar</strong><br><small>3</small></a>
+        <h4>Event 3</h4>
+        <p>This is the description for the event. This is the description for the event. This is the description for the event.</p>
+      </div><!--event-->
+      <div class="event">
+        <a href="#" class="btn btn-primary btn-large"><strong class="upper">apr</strong><br><small>12</small></a>
+        <h4>Event 4</h4>
+        <p>This is the description for the event. This is the description for the event. This is the description for the event.</p>
+      </div><!--event-->
+      <div class="event event-more">
+        <a href="#" class="btn btn-primary btn-large"><strong>More &raquo;</strong></a>
+      </div><!--event-->
+      <div class="clearfix"></div>
+		</div><!--upcoming events-->
+		<div class="col-md-6">
+      <h2>Quote of the Day</h2>
+      <hr>
+      <div style="background:url('http://placehold.it/400x150') no-repeat; background-size:cover; width:100%;height:150px;"></div>
+      <blockquote>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+		</div><!--quote of the day-->
+	</div><!--events/quote-->
+<!-- </div> <!--container before hero-->
+	<div id="hero" class="row">
+		<div class="col-md-12">
+			<div class="jumbotron">
+				<h1>
+					Become a Coach Today!
+				</h1>
+				<p class="lead">
+					Learn everything there is about being a BeachBody Coach from a professional.
+				</p>
+				<p>
+					<a class="btn btn-primary btn-large pull-right" href="#">Learn more &raquo;</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div><!--end of container-->
+<div id="footer" class="container-fluid">
+  <div class="row">
+		<div class="col-md-4 col add-divider">
+      test1
+		</div>
+		<div class="col-md-4 col add-divider">
+      test2
+		</div>
+		<div class="col-md-4 col">
+      test3
+		</div>
+	</div>
+	<div class="row">
+		<div id="copyright" class="col-md-12">
+      &copy; 2016 GetFitU Inc.
+		</div>
+	</div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<!--initiate banner-->
+<script type="text/javascript">
+  var $ = jQuery.noConflict();
+  $(document).ready(function() {
+      $('#banner').carousel({ interval: 5000, cycle: true,pause:false });
+  });
+</script>
+</body>
+</html>
